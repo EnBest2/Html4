@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Oktató App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <div class="container">
+    <button id="toggle-theme">Világos / Sötét mód</button>
+    <h1>1. lecke: HTML alapok – Bemutatkozás</h1>
+    <div class="explanation">
+      <h2>Elméleti magyarázat</h2>
+      <p><strong>&lt;!DOCTYPE html&gt;</strong> – Megadja, hogy HTML5 dokumentumról van szó.</p>
+      <p><strong>&lt;html&gt;</strong> – A dokumentum gyökéreleme.</p>
+      <p><strong>&lt;head&gt;</strong> – Metaadatokat tartalmaz (mint pl. a cím és karakterkódolás).</p>
+      <p><strong>&lt;body&gt;</strong> – A látható tartalom helye.</p>
+      <p><strong>&lt;h1&gt;</strong> – A legfontosabb címsor.</p>
+      <p><strong>&lt;p&gt;</strong> – Bekezdés, normál szöveg kijelzésére.</p>
+    </div>
+    <p><strong>Feladat:</strong> Írj egy HTML oldalt, amely tartalmaz egy &lt;h1&gt; címsort a neveddel, és egy &lt;p&gt; bekezdést a hobbidról!</p>
+    <textarea id="editor" rows="10">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bemutatkozás</title>
+  </head>
+  <body>
+    <h1>Anna</h1>
+    <p>Szeretek programozni.</p>
+  </body>
+</html>
+    </textarea>
+    <iframe id="preview"></iframe>
+    <button onclick="checkCode()">Ellenőrzés</button>
+    <button onclick="downloadCode()">Letöltés</button>
+    <div id="result"></div>
+    <div id="xp-bar-container">
+      <div id="xp-bar"></div>
+    </div>
+    <p>Szint: <span id="level">1</span> | XP: <span id="xp">0</span> / <span id="xp-max">50</span></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
